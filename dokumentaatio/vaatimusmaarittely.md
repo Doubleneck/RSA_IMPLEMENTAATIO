@@ -2,8 +2,7 @@
 
 ## Sovelluksen tarkoitus
 
-Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata ja purkaa viestejä generoitujen suuriin (1024bit) alkulukuihin perustuvien
-avainten perusteella.
+Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata ja purkaa viestejä generoitujen suuriin (1024bit) alkulukuihin perustuvien avainten perusteella.
 
 ## Harjoitustyön määrittelyt
 
@@ -11,12 +10,20 @@ avainten perusteella.
 -Dokumentaatio on suomeksi.
 -Harjoitustyössä käytetty kieli on Python.
 -Vertaisarvioita ajatellen: en osaa juurikaan muita kieliä kuin Pythonia.
+
+-RSA-avainten generointi tuottaa julkisen avaimen eli lukuparin (N,e) ja yksityisen avaimen eli lukuparin (N,d).
+-toteutan havainnollistamisen niin, että salattava data annetaan tekstimuodossa, ja se muutetaan binääreiksi ja suureksi luvuksi, ja sama vastaavasti purkaessa toisin päin. Näin toteutettuna viestin pituus rajoittuu avaimen kokoon.
+
 -Avainten generoimisessa käytetään:
-  -miller-rabin -algoritmia, jolla tuotetaan tarvittavat suuret alkuluvut (algoritmi on propabilistinen, eli takaa että luvut ovat alkulukuja hyvin suurella 
-  todennäköisyydellä), joilla tuotetaan avaimissa tarvittava N-komponentti.
+  -miller-rabin -algoritmia, jolla tuotetaan tarvittavat suuret alkuluvut (algoritmi on propabilistinen, eli takaa että luvut ovat alkulukuja hyvin suurella todennäköisyydellä), joilla tuotetaan avaimissa tarvittava N-komponentti.
   -Laajennettua eukleideen algoritmia tuottamaan salaiseen avaimeen tarvittava d-komponentti.
   -Julkisen avaimen e-komponenttina käytetään yleiseksi standardiksi muodostunutta lukua 65537.
   -"SieveOfEratosthenes" -algoritmi, jota käytetään tuottamaan ensimmäisten alkulukujen sarja varsinaista miller - rabinia optimoimaan.
+  
+-Salauksessa annetaan syötteeksi generoitu julkinen avain ja salattava viesti, ja vastaavasti purkaessa syötteeksi annetaan yksityinen avain ja kryptattu viesti.
+
+
+
   
 -Algoritmin aika- ja tilavaatimukset:
   (TÄMÄ ON KYLLÄ AIKA HEBREAA MULLE MISTÄ NÄÄ SEURAA...)
