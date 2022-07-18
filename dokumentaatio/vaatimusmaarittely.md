@@ -27,7 +27,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
   
 - Algoritmin aika- ja tilavaatimukset:
   (TÄMÄ ON KYLLÄ AIKA HEBREAA MULLE MISTÄ NÄÄ SEURAA...)
-  - jos oikein ymmärsin niin tässä on kyseessä "repeated squaring" algoritmi, jonka aikavaatimus on O(k log3 n), missä n on alkulukukandidaatti?
+  - jos oikein ymmärsin niin tässä on kyseessä "repeated squaring" algoritmi, jonka aikavaatimus on O(k log3 n), missä n on alkulukukandidaatti ja k testausiteraatioiden määrä?
   - tilavaatimus?? 
 
 - Lähteitä:
