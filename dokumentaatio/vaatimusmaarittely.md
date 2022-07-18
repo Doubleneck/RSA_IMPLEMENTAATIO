@@ -48,7 +48,8 @@ Sovelluksella on tekstikäyttöliittymä. Jatkokehitysideana graafinen käyttöl
 
 ### Ei kirjautumista
 
-
+- [ ] käyttäjä voi luoda julkisen avaimen (VÄLIVAIHE)
+- [ ] käyttäjä voi luoda yksityisen avaimen (VÄLIVAIHE)
 - [ ] käyttäjä voi luoda yksityisen ja julkisen avaimen avainparin
 - [ ] käyttäjä voi salata viestin generoidulla julkisella avaimella
 - [ ] käyttäjä voi purkaa viestin generoidulla yksityisellä avaimella
