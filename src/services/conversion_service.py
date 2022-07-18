@@ -1,12 +1,11 @@
 class ConversionService:
-    '''teksti - binääriluku -muunnoksista vastaava luokka'''
+    '''teksti-binääri konversiosta vastaava luokka'''
 
     def __init__(self):
         pass
 
     def encodeStrToBin(string):
         charBits = 8
-        # bitMask = 2**charBits-1
         b = 0
         for c in string:
             b <<= charBits
@@ -20,4 +19,4 @@ class ConversionService:
         while b != 0:
             out = chr(b & bitMask) + out
             b >>= charBits
-        return out      
+        return out  

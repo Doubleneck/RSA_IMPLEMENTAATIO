@@ -1,10 +1,9 @@
-from services.rsa_service import RsaService
-#from services import ConversionService
+from services.conversion_service import ConversionService
 
 class UI:
     def __init__(self):
         pass
-    
+
     def start():
         print("***RSA-GENERAATTORI JA KOODERI/DEKOODERI*** \n")
         #print("1 -  \n")
@@ -20,6 +19,16 @@ class UI:
             if select == "1":
                 print("GENEROIDAAN / DEMO \n")   
             if select == "2":
-                print("SALATAAN / DEMO \n")    
+                print("SALATAAN / DEMO (= NYT MUUNTAA) \n")   
+                while True:
+                    pubKey = input("Anna julkinen avain: \n")
+                    message = input("Kirjoita viesti: \n")
+                    nro = ConversionService.encodeStrToBin(message)
+                    print("viesti numerona on: ", nro)
+                    print("numero viestinä on: ", ConversionService.encodeBinToString(nro))
+                    break
+
+
+
             if select == "3":
                 print("PURETAAN / DEMO \n") 
