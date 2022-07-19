@@ -1,6 +1,6 @@
 from ui.ui import UI
 
-def main():   
+def main():
     UI.start()
 
 if __name__ == '__main__':

@@ -1,22 +1,22 @@
+'''teksti-binääri konversio'''
 class ConversionService:
-    '''teksti-binääri konversiosta vastaava luokka'''
+    '''konversiosta vastaava luokka'''
+    def encode_str_to_bin(self, string):
+        '''muuntaa merkkijonon binääriksi'''
+        char_bits = 8
+        b_t = 0
+        for char in string:
+            b_t <<= char_bits
+            b_t |= ord(char)
+        return b_t
 
-    def __init__(self):
-        pass
-
-    def encodeStrToBin(string):
-        charBits = 8
-        b = 0
-        for c in string:
-            b <<= charBits
-            b |= ord(c)
-        return b
-
-    def encodeBinToString(b):
-        charBits = 8
-        bitMask = 2**charBits-1
+    def encode_bin_to_string(self, b_t):
+        '''muuntaa binäärin merkkijonoksi'''
+        char_bits = 8
+        bit_mask = 2**char_bits-1
         out = ""
-        while b != 0:
-            out = chr(b & bitMask) + out
-            b >>= charBits
-        return out  
+        while b_t != 0:
+            out = chr(b_t & bit_mask) + out
+            b_t >>= char_bits
+        return out
+        
