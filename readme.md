@@ -8,10 +8,10 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8`.
 
 ## Dokumentaatio
 
-- [käyttöohje](puuttuu)  
+- käyttöohje (puuttuu)  
 - [vaatimusmäärittely](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/vaatimusmaarittely.md)  
 - [tuntikirjanpito](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/tuntikirjanpito.md)
-- [testausdokumentti](puuttuu)
+- testausdokumentti (puuttuu)
 
 ## Asennus
 
