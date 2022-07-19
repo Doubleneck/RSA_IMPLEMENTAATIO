@@ -16,28 +16,28 @@ class UI:
             if select not in ["1","2","3","q"]:
                 print("Väärä valinta...yritä uudelleen \n")
             if select == "1":
-                print("GENEROIDAAN / DEMO (=GENEROIDAAN P!) \n")   
-                P = RsaService().create_p()
-                print(P)
+                print("GENEROIDAAN / DEMO ) \n")   
+                rsa_keys = RsaService().create_keys()
+                pub_key = str(rsa_keys[1])+"-"+str(rsa_keys[2])
+                pri_key = str(rsa_keys[0])+"-"+str(rsa_keys[2])
+                print("PUBLIC KEY (e,N): \n")
+                print(pub_key,"\n")
+                print("******************************************************************************")
+                print("PRIVATE KEY (d,N): \n")
+                print(pri_key,"\n")
+
             if select == "2":
-                print("SALATAAN / DEMO (= NYT MUUNTAA) \n")   
+                print("SALATAAN / DEMO \n")   
                 while True:
-                    pubKey = input("Anna julkinen avain: \n")
+                    pub_key = input("Anna julkinen avain: \n")
+                    e_value = int(pub_key.split("-")[0])
+                    n_value = int(pub_key.split("-")[1])
                     message = input("Kirjoita viesti: \n")
-                    nro = ConversionService().encode_str_to_bin(message)
-                    print("viesti numerona on: ", nro)
-                    print("numero viestinä on: ", ConversionService().encode_bin_to_string(nro))
-                    rr = 5
-                    P = RsaService().sieve_of_eratosthenes(200)
-                  #  Q = RsaService.n_odd_random(10)
-                    #S = RsaService.low_level_primality_check(self,211)
-                    R = RsaService().low_level_primality_check(211)
-                    
-                    #N = P * Q
-                    print(P)
-                    print(R)
-                   # print(Q)
-                  #  print(S)
+                    msg_bin = ConversionService().encode_str_to_bin(message)
+                    crypted_msg = RsaService().en_crypt(e_value, n_value,msg_bin)
+                    print("**********************************************\n")
+                    print("viesti salattuna:\n")
+                    print(crypted_msg)
                     
                     break
                     

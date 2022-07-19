@@ -94,3 +94,31 @@ class RsaService:
             if low_level_candidate % 65537 == 0:
                 found = False
         return low_level_candidate
+
+    def create_keys(self):     
+        p_value = self.create_p()
+        q_value = self.create_q(p_value)
+        big_N = p_value * q_value
+        r_value = (p_value-1) * (q_value-1)
+        e_value = 65537
+        d_value = None  #PUUTTUU, EUCLEIDIAN!!
+    #print(math.gcd(r,e))
+    #d = eucalgVANHA(e, r)[0]
+    #if d < 0: 
+    #    d += r
+    #print(d)
+        return (d_value,e_value,big_N)
+   # print("publicKey ", (e,N))
+   # print("privateKey ", (d,N))    
+
+    def en_crypt(self,e,N,msg):
+        ret = pow(msg,e,N)
+   # c = modpow(msg,e,N)
+   # print(c)
+        return ret
+
+    def deCrypt(d,N,msg):
+        ret = pow(msg,d,N)
+  #  c = modpow(msg,d,N)
+  #  print(c)   
+        return ret 
