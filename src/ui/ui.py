@@ -16,7 +16,7 @@ class UI:
             if select not in ["1","2","3","q"]:
                 print("Väärä valinta...yritä uudelleen \n")
             if select == "1":
-                print("GENEROIDAAN / DEMO ) \n")   
+              #  print("GENEROIDAAN / DEMO ) \n")   
                 rsa_keys = RsaService().create_keys()
                 pub_key = str(rsa_keys[1])+"-"+str(rsa_keys[2])
                 pri_key = str(rsa_keys[0])+"-"+str(rsa_keys[2])
@@ -27,7 +27,7 @@ class UI:
                 print(pri_key,"\n")
 
             if select == "2":
-                print("SALATAAN / DEMO \n")   
+              #  print("SALATAAN / DEMO \n")   
                 while True:
                     pub_key = input("Anna julkinen avain: \n")
                     e_value = int(pub_key.split("-")[0])
@@ -43,4 +43,15 @@ class UI:
                     
 
             if select == "3":
-                print("PURETAAN / DEMO \n") 
+                while True:
+                    pri_key = input("Anna yksityinen avain: \n")
+                    d_value = int(pri_key.split("-")[0])
+                    n_value = int(pub_key.split("-")[1])
+                    message = input("Anna salattu viesti: \n")
+                    encrypted_msg = RsaService().en_crypt(e_value, n_value,msg_bin)
+                    msg_str = ConversionService().encode_bin_to_string(encrypted_msg)
+                    print("**********************************************\n")
+                    print("viesti purettuna:\n")
+                    print(msg_str)
+                    
+                    break 
