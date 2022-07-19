@@ -33,6 +33,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 - Lähteitä:
     - https://fi.wikipedia.org/wiki/RSA
     - https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
+    - https://www.youtube.com/watch?v=qdylJqXCDGs (Miller Rabin yksinkertaistettuna, puuttuu tapaus jossa jää loputtomiin looppaamaan?)
     - https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
 
 ## Käyttäjät
