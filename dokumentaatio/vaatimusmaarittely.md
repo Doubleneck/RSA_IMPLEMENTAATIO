@@ -12,6 +12,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 - Vertaisarvioita ajatellen: en osaa juurikaan muita kieliä kuin Pythonia.
 
 - RSA-avainten generointi tuottaa julkisen avaimen eli lukuparin (N,e) ja yksityisen avaimen eli lukuparin (N,d).
+- RSA-avainten suuruusluokka on 1024bit.
 - toteutan havainnollistamisen niin, että salattava data annetaan tekstimuodossa, ja se muutetaan binääreiksi ja suureksi luvuksi, ja sama vastaavasti purkaessa toisin päin. Näin toteutettuna viestin pituus rajoittuu avaimen kokoon.
 
 - Avainten generoimisessa käytetään:
@@ -33,6 +34,8 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 - Lähteitä:
     - https://fi.wikipedia.org/wiki/RSA
     - https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
+    - https://medium.com/@prudywsh/how-to-generate-big-prime-numbers-miller-rabin-49e6e6af32fb
+    - https://www.youtube.com/watch?v=qdylJqXCDGs (Miller Rabin yksinkertaistettuna, puuttuu tapaus jossa jää loputtomiin looppaamaan?)
     - https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
 
 ## Käyttäjät

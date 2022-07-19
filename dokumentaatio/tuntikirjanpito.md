@@ -4,4 +4,5 @@
 |:--:|:--|:----|
 |15.-30.6.|18| Alustavia testejä ja aiheeseen tutustumisia|
 |18.7.|4| luotu repo, alustava vaatimusmäärittely, viikkoraportin pohja|
-|yht |22|
+|18.7.|3| luotu ohjelmarunko, string-bin konversiot|
+|yht |25|
