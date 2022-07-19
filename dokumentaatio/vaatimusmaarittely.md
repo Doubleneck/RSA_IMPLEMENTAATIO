@@ -12,6 +12,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 - Vertaisarvioita ajatellen: en osaa juurikaan muita kieliä kuin Pythonia.
 
 - RSA-avainten generointi tuottaa julkisen avaimen eli lukuparin (N,e) ja yksityisen avaimen eli lukuparin (N,d).
+- RSA-avainten suuruusluokka on 1024bit.
 - toteutan havainnollistamisen niin, että salattava data annetaan tekstimuodossa, ja se muutetaan binääreiksi ja suureksi luvuksi, ja sama vastaavasti purkaessa toisin päin. Näin toteutettuna viestin pituus rajoittuu avaimen kokoon.
 
 - Avainten generoimisessa käytetään:
