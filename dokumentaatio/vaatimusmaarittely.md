@@ -37,6 +37,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
     - https://medium.com/@prudywsh/how-to-generate-big-prime-numbers-miller-rabin-49e6e6af32fb
     - https://www.youtube.com/watch?v=qdylJqXCDGs (Miller Rabin yksinkertaistettuna, puuttuu tapaus jossa jää loputtomiin looppaamaan?)
     - https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
+    - http://www-math.ucdenver.edu/~wcherowi/courses/m5410/exeucalg.html (Laajennettu Euklideen algoritmi ja inverse kompaktisti selitettynä)
 
 ## Käyttäjät
 
