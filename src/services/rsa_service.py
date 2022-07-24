@@ -101,28 +101,39 @@ class RsaService:
         big_N = p_value * q_value
         r_value = (p_value-1) * (q_value-1)
         e_value = 65537
-       # d_value = None  #PUUTTUU, EUCLEIDIAN!!************************
-    #print(math.gcd(r,e))
-        d_value = self.eucalgVANHA(e_value, r_value)[0]
+        d_value = self.extended_eucleidian(e_value, r_value)[0]
         if d_value < 0: 
             d_value += r_value
-    #print(d)
+
         return (d_value,e_value,big_N)
    # print("publicKey ", (e,N))
    # print("privateKey ", (d,N))    
 
     def en_crypt(self,e,N,msg):
         ret = pow(msg,e,N)
-   # c = modpow(msg,e,N)
-   # print(c)
         return ret
 
     def de_crypt(self,d,N,msg):
-        ret = pow(msg,d,N)
-  #  c = modpow(msg,d,N)
-  #  print(c)   
+        ret = pow(msg,d,N)  
         return ret 
 
+    def extended_eucleidian(self,a,b):
+        s = 0
+        old_s = 1
+        r = b
+        old_r = a
+        while r != 0:
+            quotient = old_r // r
+            old_r, r =  r, old_r - quotient * r
+            old_s, s =  s, old_s - quotient * s
+        if b != 0:
+            bezout_t = (old_r - old_s * a)	 // b
+        else:
+            bezout_t = 0  
+        return old_s, bezout_t, old_r    
+        # output "Bézout coefficients:", (old_s, bezout_t)
+        # output "greatest common divisor:", old_r
+'''
     def eucalgVANHA(self, a, b):
         # make a the bigger one and b the lesser one
         swapped = False
@@ -146,6 +157,4 @@ class RsaService:
             a, b, ca, cb = b, a-b*k, cb, (ca[0]-k*cb[0], ca[1]-k*cb[1])
         if swapped:
             return (ca[1], ca[0])    
-
-
-  
+'''

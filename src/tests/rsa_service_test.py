@@ -3,7 +3,6 @@ import unittest
 import sympy
 from services.rsa_service import RsaService
 
-
 class TestRsaService(unittest.TestCase):
 
     def setUp(self):
@@ -27,30 +26,29 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(False, self.rsaService.low_level_primality_check(125))
 
     def test_low_level_primality_check_medium(self):
-        self.assertEqual(True, self.rsaService.low_level_primality_check(391939))    
+        self.assertEqual(True, self.rsaService.low_level_primality_check(391939))
 
     def test_low_level_primality_check_medium_no_prime(self):
-        self.assertEqual(False, self.rsaService.low_level_primality_check(400000000))    
+        self.assertEqual(False, self.rsaService.low_level_primality_check(400000000))
 
     def test_low_level_primality_check_big(self):
         self.assertEqual(True, self.rsaService.low_level_primality_check(10969764891642967028739597576355893629690708119113625579670998564945570092957573289791980389514640480614111598007397242657731590795479703780703838025508199))       
 
     def test_low_level_primality_check_big_no_prime(self):
         self.assertEqual(False, self.rsaService.low_level_primality_check(10969764891642967028739597576355893629690708119113625579670998564945570092957573289791980389514640480614111598007397242657731590795479703780703838025508200))
-    #10969764891642967028739597576355893629690708119113625579670998564945570092957573289791980389514640480614111598007397242657731590795479703780703838025508199   
     
-    def test_miller_rabin_is_not_prime_big(self):  
+    def test_miller_rabin_is_not_prime_big(self):
         a = sympy.randprime(pow(2,511), pow(2,512))
         b = sympy.randprime(pow(2,511), pow(2,512))
         self.assertEqual(False, self.rsaService.miller_rabin_check(a*b))
 
-    def test_miller_rabin_is_prime_big(self):  
+    def test_miller_rabin_is_prime_big(self):
         '''testaa viidellä 512 bit random -alkuluvulla'''
         i = 0
-        while i != 4:
+        while i < 4:
             a = sympy.randprime(pow(2,511), pow(2,512))
             test_passed = self.rsaService.miller_rabin_check(a)
             if not test_passed:
                 break
             i += 1
-        self.assertEqual(True, test_passed)    
+        self.assertEqual(True, test_passed)
