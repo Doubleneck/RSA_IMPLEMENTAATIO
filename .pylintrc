@@ -1,0 +1,2 @@
+[MASTER]
+ignore = index.py, ui, tests
