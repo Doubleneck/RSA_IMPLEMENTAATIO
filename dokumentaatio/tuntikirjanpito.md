@@ -6,4 +6,6 @@
 |18.7.|4| luotu repo, alustava vaatimusmäärittely, viikkoraportin pohja|
 |18.7.|3| luotu ohjelmarunko, string-bin konversiot|
 |19.7.|8| rsa funktioita, ensimmäisiä testejä, poetry invoke käyttöön, pylint siivousta, keygen ja ui rakentelua|
-|yht |33|
+|23.7.|2| laajennetun eukleideen algoritmin rakennus|
+|24.7.|7| testit miller-rabinille, eukleideen algoritmi, ohjelma toimiimaan, lintteriä ja siivousta.|
+|yht |42|
