@@ -11,7 +11,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 - Harjoitustyössä käytetty kieli on Python.
 - Vertaisarvioita ajatellen: en osaa juurikaan muita kieliä kuin Pythonia.
 
-- RSA-avainten generointi tuottaa julkisen avaimen eli lukuparin (N,e) ja yksityisen avaimen eli lukuparin (N,d).
+- RSA-avainten generointi tuottaa avainparin: julkisen avaimen, joka on lukupari (N,e) ja yksityisen avaimen, joka on lukupari (N,d).
 - RSA-avainten suuruusluokka on 1024bit.
 - toteutan havainnollistamisen niin, että salattava data annetaan tekstimuodossa, ja se muutetaan binääreiksi ja suureksi luvuksi, ja sama vastaavasti purkaessa toisin päin. Näin toteutettuna viestin pituus rajoittuu avaimen kokoon.
 
@@ -24,8 +24,6 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 - Salauksessa annetaan syötteeksi generoitu julkinen avain ja salattava viesti, ja vastaavasti purkaessa syötteeksi annetaan yksityinen avain ja kryptattu viesti.
 
 
-
-  
 - Algoritmin aika- ja tilavaatimukset:
   (TÄMÄ ON KYLLÄ AIKA HEBREAA MULLE MISTÄ NÄÄ SEURAA...)
   - jos oikein ymmärsin niin tässä on kyseessä "repeated squaring" algoritmi, jonka aikavaatimus on O(k log3 n), missä n on alkulukukandidaatti ja k testausiteraatioiden määrä?
