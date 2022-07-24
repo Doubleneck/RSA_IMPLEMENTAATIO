@@ -101,11 +101,11 @@ class RsaService:
         big_N = p_value * q_value
         r_value = (p_value-1) * (q_value-1)
         e_value = 65537
-        d_value = None  #PUUTTUU, EUCLEIDIAN!!
+       # d_value = None  #PUUTTUU, EUCLEIDIAN!!************************
     #print(math.gcd(r,e))
-    #d = eucalgVANHA(e, r)[0]
-    #if d < 0: 
-    #    d += r
+        d_value = self.eucalgVANHA(e_value, r_value)[0]
+        if d_value < 0: 
+            d_value += r_value
     #print(d)
         return (d_value,e_value,big_N)
    # print("publicKey ", (e,N))
@@ -117,8 +117,35 @@ class RsaService:
    # print(c)
         return ret
 
-    def deCrypt(d,N,msg):
+    def de_crypt(self,d,N,msg):
         ret = pow(msg,d,N)
   #  c = modpow(msg,d,N)
   #  print(c)   
         return ret 
+
+    def eucalgVANHA(self, a, b):
+        # make a the bigger one and b the lesser one
+        swapped = False
+        if a < b:
+            a, b = b, a
+            swapped = True
+        # ca and cb store current a and b in form of
+        # coefficients with initial a and b
+        # a' = ca[0] * a + ca[1] * b
+        # b' = cb[0] * a + cb[1] * b
+        ca = (1, 0)
+        cb = (0, 1)
+        while b != 0:
+            # k denotes how many times number b
+            # can be substracted from a
+            k = a // b
+            # a  <- b
+            # b  <- a - b * k
+            # ca <- cb
+            # cb <- (ca[0] - k * cb[0], ca[1] - k * cb[1])
+            a, b, ca, cb = b, a-b*k, cb, (ca[0]-k*cb[0], ca[1]-k*cb[1])
+        if swapped:
+            return (ca[1], ca[0])    
+
+
+  

@@ -34,24 +34,24 @@ class UI:
                     n_value = int(pub_key.split("-")[1])
                     message = input("Kirjoita viesti: \n")
                     msg_bin = ConversionService().encode_str_to_bin(message)
-                    crypted_msg = RsaService().en_crypt(e_value, n_value,msg_bin)
+                    encrypted_msg = RsaService().en_crypt(e_value, n_value, msg_bin)
                     print("**********************************************\n")
                     print("viesti salattuna:\n")
-                    print(crypted_msg)
+                    print(encrypted_msg)
                     
                     break
-                    
 
             if select == "3":
                 while True:
                     pri_key = input("Anna yksityinen avain: \n")
                     d_value = int(pri_key.split("-")[0])
-                    n_value = int(pub_key.split("-")[1])
-                    message = input("Anna salattu viesti: \n")
-                    encrypted_msg = RsaService().en_crypt(e_value, n_value,msg_bin)
-                    msg_str = ConversionService().encode_bin_to_string(encrypted_msg)
+                    n_value = int(pri_key.split("-")[1])
+                    crypted_message = input("Anna salattu viesti: \n")
+                    decrypted_msg = RsaService().de_crypt(d_value, n_value, int(crypted_message))
+                    msg_str = ConversionService().encode_bin_to_string(decrypted_msg)
                     print("**********************************************\n")
                     print("viesti purettuna:\n")
                     print(msg_str)
+                    print("**********************************************\n")
                     
                     break 
