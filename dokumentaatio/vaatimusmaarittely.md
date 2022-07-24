@@ -36,7 +36,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
     - https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
     - https://medium.com/@prudywsh/how-to-generate-big-prime-numbers-miller-rabin-49e6e6af32fb
     - https://www.youtube.com/watch?v=qdylJqXCDGs (Miller Rabin yksinkertaistettuna, puuttuu tapaus jossa jää loputtomiin looppaamaan?)
-    - https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
+    - https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm (tässä implementaatiossa käytetty algoritmi löytyy täältä pseudokoodina)
     - http://www-math.ucdenver.edu/~wcherowi/courses/m5410/exeucalg.html (Laajennettu Euklideen algoritmi ja inverse kompaktisti selitettynä)
 
 ## Käyttäjät
@@ -47,13 +47,10 @@ Sovellukselle ei määritellä erikseen käyttäjiä.
 
 Sovelluksella on tekstikäyttöliittymä. Jatkokehitysideana graafinen käyttöliittymä. 
 
-
 ## Perusversion tarjoama toiminnallisuus
 
 ### Ei kirjautumista
 
-- [x] käyttäjä voi luoda julkisen avaimen (VÄLIVAIHE)
-- [ ] käyttäjä voi luoda yksityisen avaimen (VÄLIVAIHE)
-- [ ] käyttäjä voi luoda yksityisen ja julkisen avaimen avainparin
-- [ ] käyttäjä voi salata viestin generoidulla julkisella avaimella
-- [ ] käyttäjä voi purkaa viestin generoidulla yksityisellä avaimella
+- [x] käyttäjä voi luoda yksityisen ja julkisen avaimen avainparin
+- [x] käyttäjä voi salata viestin generoidulla julkisella avaimella
+- [x] käyttäjä voi purkaa viestin generoidulla yksityisellä avaimella
