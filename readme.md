@@ -38,6 +38,15 @@ poetry run invoke test
 
 Testikattavuusraportin voi generoida komennolla:
 ```bash
-poetry run invoke coverage-report (EI VIELÄ OLEMASSA)
+poetry run invoke coverage-report 
 ```
 Raportti generoituu _htmlcov_-hakemistoon.
+
+### Pylint
+
+Koodin tyylitarkistuksen voit tehdä komennolla:
+```bash
+poetry run invoke lint 
+```
+Lintteri tarkistaa kansion src tiedostot, poislukien index.py, tests-kansion tiedostot sekä käyttöliittymäkansion ui tiedostot.
+
