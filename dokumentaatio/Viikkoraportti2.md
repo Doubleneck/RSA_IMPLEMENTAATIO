@@ -1,7 +1,8 @@
 - Miten ohjelma on edistynyt
     - Ohjelma näyttäisi toimivan (24.7.)
     - Miller rabin - algoritmi näyttäisi toimivan oikein ja läpäisee testit (24.7.)
-    - Coverage otettu käyttöön, dokumentaatiota rakenneltu (25.7.)
+    - Extended euclidian - algoritmi näyttäisi toimivan oikein ja läpäisee testit (25.7.)
+    - Coverage - testiraportointi otettu käyttöön, dokumentaatiota rakenneltu (25.7.)
     - Yksikkötestien kattavuus nyt 73% (25.7.
     
 - Mitä opin tällä viikolla / tänään?
