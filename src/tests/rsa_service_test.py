@@ -53,3 +53,12 @@ class TestRsaService(unittest.TestCase):
                 break
             i += 1
         self.assertEqual(True, test_passed)
+
+    def test_extended_eucleidian(self):
+        '''testaa että algoritmi palauttaa d_komponentin'''
+        a_value = sympy.randprime(pow(2,511), pow(2,512))
+        b_value = sympy.randprime(pow(2,511), pow(2,512))
+        totient = (a_value-1) * (b_value-1)
+        e_value = 65537
+        d_value = self.rsaService.extended_eucleidian(e_value,totient)   
+        self.assertEqual(1, e_value * d_value % totient) 
