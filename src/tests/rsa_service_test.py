@@ -55,7 +55,7 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(True, test_passed)
 
     def test_extended_eucleidian(self):
-        '''testaa että algoritmi palauttaa d_komponentin'''
+        '''testaa että algoritmi palauttaa toimivan d_komponentin'''
         a_value = sympy.randprime(pow(2,511), pow(2,512))
         b_value = sympy.randprime(pow(2,511), pow(2,512))
         totient = (a_value-1) * (b_value-1)
