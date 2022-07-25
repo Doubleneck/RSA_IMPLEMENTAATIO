@@ -4,7 +4,7 @@ Sovellus on 1024bit RSA-avaingeneraattori ja encoder/decoder tekstikäyttöliitt
  
 ##  Python-versio:
 
-Sovelluksen toiminta on testattu Python-versiolla `3.8`.
+Sovelluksen toiminta on testattu Python-versiolla `3.8` Mac OS ja Ubuntu Linux käyttöjärjestelmissä.
 
 ## Dokumentaatio
 
@@ -23,7 +23,6 @@ poetry install
 Jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
 ```bash
  source $HOME/.poetry/env
- ```
 ```
 2. Sovelluksen käynnistys
 ```bash
