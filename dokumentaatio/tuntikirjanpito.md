@@ -9,4 +9,5 @@
 |23.7.|2| laajennetun eukleideen algoritmin rakennus|
 |24.7.|7| testit miller-rabinille, eukleideen algoritmi, ohjelma toimiimaan, lintteriä ja siivousta.|
 |25.7.|4| testit eukleideen algoritmille, invoke ajan tasalle, testiraportointi käyttöön|
-|yht |46|
+|26.7.|4| testejä, alkulukugeneroinnin virheen korjaus,uusi testiraportti|
+|yht |50|
