@@ -115,10 +115,12 @@ class RsaService:
 
     def extended_eucleidian(self,a_val,b_val):
         '''tuottaa d-komponentin yksityiseen avaimeen
-           output muuttujat: 
+           output muuttujat:
            "Bézout coefficients:": (old_s, bezout_t)
            "GCD": old_r
         '''
+        if a_val > b_val:
+            a_val, b_val = b_val, a_val
         s_val = 0
         old_s = 1
         r_val = b_val
@@ -133,4 +135,4 @@ class RsaService:
             bezout_t = 0
         if old_s < 0:
             old_s += b_val
-        return old_s # 
+        return old_s

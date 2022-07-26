@@ -78,7 +78,7 @@ class TestRsaService(unittest.TestCase):
     def test_miller_rabin_is_prime_big(self):
         '''testaa miller-rabinia viidellä 512 bit random -alkuluvulla'''
         i = 0
-        while i < 4:
+        while i < 5:
             a = sympy.randprime(pow(2,511), pow(2,512))
             test_passed = self.rsaService.miller_rabin_check(a)
             if not test_passed:
@@ -87,7 +87,7 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(True, test_passed)
 
     def test_extended_eucleidian(self):
-        '''testaa että algoritmi palauttaa toimivan, d_komponentin'''
+        '''testaa että algoritmi palauttaa toimivan d-komponentin'''
         a_value = sympy.randprime(pow(2,511), pow(2,512))
         b_value = sympy.randprime(pow(2,511), pow(2,512))
         totient = (a_value-1) * (b_value-1)

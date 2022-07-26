@@ -34,6 +34,10 @@ class UI:
                     n_value = int(pub_key.split("-")[1])
                     message = input("Kirjoita viesti: \n")
                     msg_bin = ConversionService().encode_str_to_bin(message)
+                    if msg_bin.bit_length() > 1022:
+                        print("viesti on liian pitkä salattavaksi! \n")
+                        print(msg_bin.bit_length())
+                        break
                     encrypted_msg = RsaService().en_crypt(e_value, n_value, msg_bin)
                     print("**********************************************\n")
                     print("viesti salattuna:\n")
