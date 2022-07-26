@@ -63,7 +63,6 @@ class TestRsaService(unittest.TestCase):
             if not ret:
                 break
             i += 1    
-
         self.assertEqual(True, ret)
 
     def test_find_low_level_candidate(self):
