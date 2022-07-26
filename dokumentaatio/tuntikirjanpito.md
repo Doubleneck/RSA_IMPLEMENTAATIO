@@ -10,4 +10,5 @@
 |24.7.|7| testit miller-rabinille, eukleideen algoritmi, ohjelma toimiimaan, lintteriä ja siivousta.|
 |25.7.|4| testit eukleideen algoritmille, invoke ajan tasalle, testiraportointi käyttöön|
 |26.7.|4| testejä, alkulukugeneroinnin virheen korjaus,uusi testiraportti|
-|yht |50|
+|26.7.|1| ui validointia|
+|yht |51|
