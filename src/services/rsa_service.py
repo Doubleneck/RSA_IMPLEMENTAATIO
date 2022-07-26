@@ -100,10 +100,7 @@ class RsaService:
         big_n = p_value * q_value
         r_value = (p_value-1) * (q_value-1)
         e_value = 65537
-        d_value = self.extended_eucleidian(e_value, r_value)#[0]
-       # if d_value < 0:
-       #     d_value += r_value
-
+        d_value = self.extended_eucleidian(e_value, r_value)
         return (d_value,e_value,big_n)
 
     def en_crypt(self,e_val,n_val,msg):
