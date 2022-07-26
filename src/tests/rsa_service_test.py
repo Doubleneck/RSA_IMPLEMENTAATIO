@@ -37,6 +37,24 @@ class TestRsaService(unittest.TestCase):
     def test_low_level_primality_check_big_no_prime(self):
         self.assertEqual(False, self.rsaService.low_level_primality_check(10969764891642967028739597576355893629690708119113625579670998564945570092957573289791980389514640480614111598007397242657731590795479703780703838025508200))
     
+    def test_create_p_test_is_prime(self):
+        '''testaa onko luotu p alkuluku'''
+        prime_candidate = self.rsaService.create_p()
+        self.assertEqual(True, sympy.isprime(prime_candidate))
+
+    def test_create_q_test_is_prime(self):
+        '''testaa onko luotu q alkuluku'''
+        prime_p = self.rsaService.create_p()
+        q_prime_candidate = self.rsaService.create_q(prime_p)
+        self.assertEqual(True, sympy.isprime(q_prime_candidate))
+
+    def test_create_q_test_totient_is_co_prime_with_e(self):
+        '''testaa onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
+        e_value = 65537
+        prime_p = self.rsaService.create_p()
+        prime_q = self.rsaService.create_q(prime_p)
+        self.assertEqual(True, (prime_p-1) * (prime_q-1) % e_value != 0 )    
+
     def test_miller_rabin_is_not_prime_big(self):
         '''testaa luvulla joka on komposiitti'''
         a = sympy.randprime(pow(2,511), pow(2,512))
@@ -55,7 +73,7 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(True, test_passed)
 
     def test_extended_eucleidian(self):
-        '''testaa että algoritmi palauttaa toimivan d_komponentin'''
+        '''testaa että algoritmi palauttaa toimivan ,d_komponentin'''
         a_value = sympy.randprime(pow(2,511), pow(2,512))
         b_value = sympy.randprime(pow(2,511), pow(2,512))
         totient = (a_value-1) * (b_value-1)

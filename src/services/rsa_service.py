@@ -81,7 +81,7 @@ class RsaService:
         return low_level_candidate
 
     def create_q(self,p_value):
-        '''luo alkuluvun q joka on p:n co-prime'''
+        '''luo alkuluvun q, niin että phi-totientti (p-1 * q-1) on e-komponentin co-prime'''
         found = False
         while not found:
             candidate = self.n_odd_random(512)
@@ -89,7 +89,7 @@ class RsaService:
             found = self.miller_rabin_check(low_level_candidate)
             if found and low_level_candidate == p_value:
                 found = False
-            if low_level_candidate % 65537 == 0:
+            if (low_level_candidate - 1 * p_value -1) % 65537 == 0:
                 found = False
         return low_level_candidate
 
