@@ -52,11 +52,19 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(True, sympy.isprime(q_prime_candidate))
 
     def test_create_q_test_totient_is_co_prime_with_e(self):
-        '''testaa onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
+        '''testaa 10 x onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
+        i = 0
         e_value = 65537
-        prime_p = self.rsaService.create_p()
-        prime_q = self.rsaService.create_q(prime_p)
-        self.assertEqual(True, (prime_p-1) * (prime_q-1) % e_value != 0)
+        ret = True
+        while i < 10:
+            prime_p = self.rsaService.create_p()
+            prime_q = self.rsaService.create_q(prime_p)
+            ret = (prime_p-1) * (prime_q-1) % e_value != 0
+            if not ret:
+                break
+            i += 1    
+
+        self.assertEqual(True, ret)
 
     def test_find_low_level_candidate(self):
         self.assertEqual(191,self.rsaService.find_low_level_candidate(183))
