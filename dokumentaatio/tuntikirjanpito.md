@@ -8,4 +8,5 @@
 |19.7.|8| rsa funktioita, ensimmäisiä testejä, poetry invoke käyttöön, pylint siivousta, keygen ja ui rakentelua|
 |23.7.|2| laajennetun eukleideen algoritmin rakennus|
 |24.7.|7| testit miller-rabinille, eukleideen algoritmi, ohjelma toimiimaan, lintteriä ja siivousta.|
-|yht |42|
+|25.7.|4| testit eukleideen algoritmille, invoke ajan tasalle, testiraportointi käyttöön|
+|yht |46|
