@@ -13,6 +13,7 @@
     - Testien tekemistä. 
     - virhe alkulukujen generoinnissa korjattu, niin että phi-totientti nyt oikein toteuttaa ehdon: e-komponentti ja phi-totientti ovat co-primeja.(26.7.)
     - lisää testejä, testikattavuus nyt 95%, raportti löytyy testidokumentista (26.7.)
+
      
 
     
@@ -20,7 +21,11 @@
     - Yritän yhä käydä läpi salauksen matemaattisia perusteita, vielä ei olla ihan perillä.
     - On myös vaikeuksia hahmottaa, miten laajennettu eukleidian toimii inverse algoritmina yksityisen avaimen d-komponentin luomisessa. Tämä aukeaa kun         tuo matikka aukeaa.(25.7.)
     - Matikan tarkastelun seurauksena löytyi virhe algoritmista. (26.7.)
-    - viimeinen testi (jossa generoidaan avaimet, luodaan randomviesti ja varmistetaan sen enryptaaminen/dekryptaaminen) ei pysty noudattamaan single    response -periaatetta, koska ei ole kai mahdollista testata näitä asioita erikseen? 
+    - nyt tuo matikkapuoli ja laajennettu eukleidian vihdoin aukesi (27.7.)
+    - pari kysymystä on jäänyt:
+
+    - Viimeinen testi (jossa generoidaan avaimet, luodaan randomviesti ja varmistetaan sen enryptaaminen/dekryptaaminen) ei pysty noudattamaan single        response -periaatetta, koska ei ole kai mahdollista testata näitä asioita erikseen?
+    - komposiittitesti miller-rabinille kannattaa ilmeisesti muuttaa vähintään iteroivaksi ja yrittää ajaa sillä suht iso joukko läpi. Tai jopa rakentaa joku suuria Carmichael-numeroita generoiva ohjelma, jolla yrittäisi saada algoritmin luulemaan pseudoprimea alkuluvuksi? Ainakin teoriassa.. 
    
 
 - Mitä teen seuraavaksi?
