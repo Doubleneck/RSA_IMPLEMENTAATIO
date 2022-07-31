@@ -129,10 +129,10 @@ class RsaService:
             quotient = old_r // r_val
             old_r, r_val =  r_val, old_r - quotient * r_val
             old_s, s_val =  s_val, old_s - quotient * s_val
-        if b_val != 0:
-            bezout_t = (old_r - old_s * a_val)	 // b_val
-        else:
-            bezout_t = 0
+        #if b_val != 0:
+        #    bezout_t = (old_r - old_s * a_val)	 // b_val
+        #else:
+        #    bezout_t = 0
         if old_s < 0:
             old_s += b_val
         return old_s

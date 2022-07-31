@@ -108,3 +108,20 @@ class TestRsaService(unittest.TestCase):
         cipher_integer = self.rsaService.en_crypt(keys[1],keys[2],random_integer)
         plain_integer = self.rsaService.de_crypt(keys[0],keys[2],cipher_integer)
         self.assertEqual(random_integer, plain_integer)
+
+    def test_encrypt_decrypt_random_int(self):
+        '''testaa salauksen ja purun epäonnistumisen väärällä avaimella'''
+        random_integer = randint(pow(2,511),pow(2,512))
+        keys = self.rsaService.create_keys()
+        wrong_keys = self.rsaService.create_keys()
+        cipher_integer = self.rsaService.en_crypt(keys[1],keys[2],random_integer)
+        plain_integer = self.rsaService.de_crypt(wrong_keys[0],keys[2],cipher_integer)
+        self.assertNotEqual(random_integer, plain_integer)    
+
+    def test_key_generator_generates_tuple_of_3(self):
+        keys = self.rsaService.create_keys()
+        self.assertEqual(3, len(keys))
+
+    def test_key_generator_e_component_is_right(self):
+        keys = self.rsaService.create_keys()
+        self.assertEqual(65537, keys[1])    
