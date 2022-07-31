@@ -8,7 +8,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8` Mac OS ja Ubuntu Linux k
 
 ## Dokumentaatio
 
-- käyttöohje (puuttuu)  
+- [käyttöohje] (https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/kayttoohje.md)  
 - [vaatimusmäärittely](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/vaatimusmaarittely.md)  
 - [tuntikirjanpito](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [testausdokumentti](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/testausdokumentti.md)  
