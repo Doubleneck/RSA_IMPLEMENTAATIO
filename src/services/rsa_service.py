@@ -16,7 +16,7 @@ class RsaService:
         prime = [True for i in range(n_value+1)]
         p_value = 2
         while p_value * p_value <= n_value:
-            if prime[p_value] == True:
+            if prime[p_value] is True:
                 for i in range(p_value * p_value, n_value+1, p_value):
                     prime[i] = False
             p_value += 1
@@ -57,7 +57,7 @@ class RsaService:
             return True #  a_for_test varmasti EI ole alkuluku.
 
         #40 testiä eri a:n arvoilla:
-        for i in range(40):
+        for _ in range(40):
             a_for_test  = random.randrange(2, n_val)
             if test_unit(a_for_test):
                 return False
@@ -86,7 +86,7 @@ class RsaService:
             low_level_candidate = self.find_low_level_candidate(candidate)
             found = self.miller_rabin_check(low_level_candidate)
             if low_level_candidate == p_value:
-                found = False        
+                found = False
             if (low_level_candidate - 1 * p_value -1) % 65537 == 0:
                 found = False
         return low_level_candidate
