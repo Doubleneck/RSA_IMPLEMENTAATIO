@@ -45,11 +45,19 @@ class TestRsaService(unittest.TestCase):
         prime_candidate = self.rsaService.create_p()
         self.assertEqual(True, sympy.isprime(prime_candidate))
 
+    def test_create_p_test_is_random(self):
+        '''testaa ovatko 2 luotua lukua p  eri luvut'''
+        prime_candidate = self.rsaService.create_p()
+        prime_candidate2 = self.rsaService.create_p()
+        self.assertEqual(False, prime_candidate == prime_candidate2)    
+
     def test_create_q_test_is_prime(self):
         '''testaa onko luotu q alkuluku'''
         prime_p = self.rsaService.create_p()
         q_prime_candidate = self.rsaService.create_q(prime_p)
         self.assertEqual(True, sympy.isprime(q_prime_candidate))
+
+
 
     def test_create_q_test_totient_is_co_prime_with_e(self):
         '''testaa 10 x onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
