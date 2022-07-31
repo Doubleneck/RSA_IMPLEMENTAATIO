@@ -45,11 +45,25 @@ poetry run invoke lint
 Ohjelma tulostaa terminaaliin avainparin PUBLIC KEY (e,N) ja PRIVATE KEY (d,N).
 Kopioi avaimet salaamista/purkamista varten johonkin tekstityökaluun, esim muistilapulle.
 
+Huom! Antaessasi avainta terminaalissa jätä otsikko esim. "PUBLIC KEY (e,N)" pois. 
+Avain on muotoa numero1-numero2 väliviivalla erotettuna, missä numero1 on salauskomponentti ja numero2 avainten yhteinen modulus N.
 
 2. Viestin salaus
 ```bash
 Valitse päävalikosta: 2 - salaaminen 
 ```
+Ohjelma kysyy seuraavana salaamiseen käytettävän julkisen avaimen PUBLIC KEY (e,N)
 
+```bash
+Pastea kopioimasi salausavain PUBLIC KEY (e,N) terminaaliin.
+```
+Ohjelma kysyy seuraavana salattavan viestin
+
+```bash
+Kirjoita salattava viesti.
+```
+
+(viestin maksimikoko rajoittuu 1024-bit RSA-salauksessa moduluksen kokoon, elu tuohon 1024 bittiin eli Ascii merkistössä 127 merkkiin.
+Jos viestissä on asciin ulkopuolisia merkkejä, esim ääkkösiä, maksimiviestin pituus kuitenkin lyhenee.
 
 
