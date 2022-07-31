@@ -12,7 +12,7 @@
     
 - Mikä jäi epäselväksi tai tuottanut vaikeuksia? 
     
-   
+   - Mulla on viimeisin coverage report nyt dokumentaatiossa kuvana, onks se ok. Käyttäjä voi kuitenkin helposti halutessaan itse generoida sen jos haluaa tarkastella lähemmin?
 
 - Mitä teen seuraavaksi?
     
