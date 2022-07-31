@@ -37,18 +37,19 @@ poetry run invoke lint
 
 ## Käyttö
 
-1. Avainten generointi:
+1. Avainten generointi
 
 ```bash
-poetry install
+ Valitse päävalikosta: 1 - avainten generointi 
 ```
-Jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
+Ohjelma tulostaa terminaaliin avainparin PUBLIC KEY (e,N) ja PRIVATE KEY (d,N).
+Kopioi avaimet salaamista/purkamista varten johonkin tekstityökaluun, esim muistilapulle.
+
+
+2. Viestin salaus
 ```bash
- source $HOME/.poetry/env
+Valitse päävalikosta: 2 - salaaminen 
 ```
-2. Sovelluksen käynnistys
-```bash
-poetry run invoke start
-```
-```
-Lintteri tarkistaa kansion src tiedostot, poislukien index.py, tests-kansion tiedostot sekä käyttöliittymäkansion ui tiedostot.
+
+
+
