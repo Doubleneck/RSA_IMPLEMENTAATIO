@@ -55,7 +55,7 @@ Valitse päävalikosta: 2 - salaaminen
 Ohjelma kysyy seuraavana salaamiseen käytettävän julkisen avaimen PUBLIC KEY (e,N)
 
 ```bash
-Pastea kopioimasi salausavain PUBLIC KEY (e,N) terminaaliin.
+Pastea kopioimasi julkinen salausavain PUBLIC KEY (e,N) terminaaliin.
 ```
 Ohjelma kysyy seuraavana salattavan viestin
 
@@ -65,5 +65,30 @@ Kirjoita salattava viesti.
 
 (viestin maksimikoko rajoittuu 1024-bit RSA-salauksessa moduluksen kokoon, elu tuohon 1024 bittiin eli Ascii merkistössä 127 merkkiin.
 Jos viestissä on asciin ulkopuolisia merkkejä, esim ääkkösiä, maksimiviestin pituus kuitenkin lyhenee.
+Ohjelma tulostaa terminaaliin salatun viestin, kopioi se jonnekin.
 
+3. Viestin purkaminen
+```bash
+Valitse päävalikosta: 3 - purkaminen 
+```
+Ohjelma kysyy seuraavana salaamiseen käytettävän julkisen avaimen PRIVATE KEY (d,N)
+
+```bash
+Pastea kopioimasi yksityinen salausavain PRIVATE KEY (d,N) terminaaliin.
+```
+Ohjelma kysyy seuraavana purettavan viestin
+
+```bash
+Pastea terminaaliin aiemmin salaamasi viesti
+```
+Ohjelma tulostaa terminaaliin viestin purettuna.
+
+3. Lopetus
+```bash
+Valitse päävalikosta: q - lopetus
+```
+
+### Syötteiden validointi
+
+Syötteille on tehty kevyttä validointia, avainten täytyy olla oikean muotoisia, salattava viesti ei saa olla liian pitkä, purettava viesti ei saa olla tyhjä, etc.
 
