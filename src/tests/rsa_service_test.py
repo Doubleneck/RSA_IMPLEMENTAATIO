@@ -76,10 +76,16 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(191,self.rsaService.find_low_level_candidate(183))
 
     def test_miller_rabin_is_not_prime_big(self):
-        '''testaa miller-rabinia luvulla joka on komposiitti'''
-        a = sympy.randprime(pow(2,511), pow(2,512))
-        b = sympy.randprime(pow(2,511), pow(2,512))
-        self.assertEqual(False, self.rsaService.miller_rabin_check(a*b))
+        '''testaa miller-rabinia viidellä luvulla joka on komposiitti'''
+        i = 0
+        while i < 5:        
+            a = sympy.randprime(pow(2,511), pow(2,512))
+            b = sympy.randprime(pow(2,511), pow(2,512))
+            test_passed = self.rsaService.miller_rabin_check(a*b)
+            if test_passed:
+                break
+            i += 1
+        self.assertNotEqual(True, test_passed)
 
     def test_miller_rabin_is_prime_big(self):
         '''testaa miller-rabinia viidellä 512 bit random -alkuluvulla'''
@@ -100,6 +106,15 @@ class TestRsaService(unittest.TestCase):
         e_value = 65537
         d_value = self.rsaService.extended_eucleidian(e_value,totient)   
         self.assertEqual(1, e_value * d_value % totient) 
+
+    def test_extended_eucleidian(self):
+        '''testaa että algoritmi palauttaa toimivan d-komponentin, jos arvot annettu a>b'''
+        a_value = sympy.randprime(pow(2,511), pow(2,512))
+        b_value = sympy.randprime(pow(2,511), pow(2,512))
+        totient = (a_value-1) * (b_value-1)
+        e_value = 65537
+        d_value = self.rsaService.extended_eucleidian(totient,e_value)   
+        self.assertEqual(1, e_value * d_value % totient)     
 
     def test_encrypt_decrypt_random_int(self):
         '''testaa salauksen ja purun 512-bittisellä luvulla'''
