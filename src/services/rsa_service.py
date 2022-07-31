@@ -85,8 +85,8 @@ class RsaService:
             candidate = self.n_odd_random(512)
             low_level_candidate = self.find_low_level_candidate(candidate)
             found = self.miller_rabin_check(low_level_candidate)
-            if found and low_level_candidate == p_value:
-                found = False
+            if low_level_candidate == p_value:
+                found = False        
             if (low_level_candidate - 1 * p_value -1) % 65537 == 0:
                 found = False
         return low_level_candidate
