@@ -7,7 +7,7 @@ Sovellus on RSA avaingeneraattori ja encoder/decoder, jolla voi jolla voi salata
 ## Harjoitustyön määrittelyt
 
 - Kuulun TKT:n kandiohjelmaan.
-- Dokumentaatio on suomeksi.
+- Dokumentaatio on suomeksi (ohjelmointikieli ja git commitit kuitenkin englanniksi).
 - Harjoitustyössä käytetty kieli on Python.
 - Vertaisarvioita ajatellen: en osaa juurikaan muita kieliä kuin Pythonia.
 
