@@ -71,7 +71,7 @@ Ohjelma tulostaa terminaaliin salatun viestin, kopioi se jonnekin.
 ```bash
 Valitse päävalikosta: 3 - purkaminen 
 ```
-Ohjelma kysyy seuraavana salaamiseen käytettävän julkisen avaimen PRIVATE KEY (d,N)
+Ohjelma kysyy seuraavana purkamiseen käytettävän yksityisen avaimen PRIVATE KEY (d,N)
 
 ```bash
 Pastea kopioimasi yksityinen salausavain PRIVATE KEY (d,N) terminaaliin.
