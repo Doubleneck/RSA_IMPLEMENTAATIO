@@ -65,7 +65,10 @@ Kirjoita salattava viesti.
 
 (viestin maksimikoko rajoittuu 1024-bit RSA-salauksessa moduluksen kokoon, elu tuohon 1024 bittiin eli Ascii merkistössä 127 merkkiin.
 Jos viestissä on asciin ulkopuolisia merkkejä, esim ääkkösiä, maksimiviestin pituus kuitenkin lyhenee.
+
+```bash
 Ohjelma tulostaa terminaaliin salatun viestin, kopioi se jonnekin.
+```
 
 3. Viestin purkaminen
 ```bash
