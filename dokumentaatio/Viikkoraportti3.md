@@ -1,12 +1,11 @@
 
 - Miten ohjelma on edistynyt
     - Lisätään dokumentaatiota: käyttöohje (31.7.)
-
+    - Lisää testejä, mm. väärä avain ei avaa viestiä (31.7.)
     
 - Mitä opin tällä viikolla / tänään?
    - tutustumista aika- ja tilavaatimuksiin (31.7.)
      
-
     
 - Mikä jäi epäselväksi tai tuottanut vaikeuksia? 
     
