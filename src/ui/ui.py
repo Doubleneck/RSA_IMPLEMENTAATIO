@@ -55,6 +55,9 @@ class UI:
                         d_value = int(split_key[0])
                         n_value = int(split_key[1])
                         crypted_message = input("\nAnna salattu viesti: \n")
+                        if not crypted_message:
+                            print("viesti ei saa olla tyhjä!:\n")
+                            break
                         decrypted_msg = RsaService().de_crypt(d_value, n_value, int(crypted_message))
                         msg_str = ConversionService().encode_bin_to_string(decrypted_msg)
                         print("**********************************************\n")

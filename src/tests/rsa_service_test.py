@@ -58,7 +58,6 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(True, sympy.isprime(q_prime_candidate))
 
 
-
     def test_create_q_test_totient_is_co_prime_with_e(self):
         '''testaa 10 x onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
         i = 0
@@ -102,7 +101,7 @@ class TestRsaService(unittest.TestCase):
         d_value = self.rsaService.extended_eucleidian(e_value,totient)   
         self.assertEqual(1, e_value * d_value % totient) 
 
-    def test_encrypt_decrypt_random_string(self):
+    def test_encrypt_decrypt_random_int(self):
         '''testaa salauksen ja purun 512-bittisellä luvulla'''
         random_integer = randint(pow(2,511),pow(2,512))
         keys = self.rsaService.create_keys()
