@@ -12,4 +12,5 @@
 |26.7.|4| testejä, alkulukugeneroinnin virheen korjaus,uusi testiraportti|
 |26.7.|1| ui validointia|
 |31.7.|3| Käyttöohje, aika- ja tilavaatimusten tarkastelua|
-|yht |54|
+|31.7.|1| Lisää testejä, Lisää validointia|
+|yht |55|
