@@ -1,7 +1,7 @@
 
 - Miten ohjelma on edistynyt
     - Vielä ei ole tullut vastaan tilannetta, jossa salaus toimisi odotusten vastaisesti.
-    - Lisätään dokumentaatiota: käyttöohje (31.7.)
+    - Lisätty dokumentaatiota: käyttöohje (31.7.)
     - Lisää testejä, mm. väärä avain ei avaa viestiä, miller rabin komposiittitesti iteroivaksi (31.7.)
     - testikattavuus yksikkötesteissä 95% -> 98%
     
