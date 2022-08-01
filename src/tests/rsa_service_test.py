@@ -107,7 +107,7 @@ class TestRsaService(unittest.TestCase):
         d_value = self.rsaService.extended_eucleidian(e_value,totient)   
         self.assertEqual(1, e_value * d_value % totient) 
 
-    def test_extended_eucleidian(self):
+    def test_extended_eucleidian_swap(self):
         '''testaa että algoritmi palauttaa toimivan d-komponentin, jos arvot annettu a>b'''
         a_value = sympy.randprime(pow(2,511), pow(2,512))
         b_value = sympy.randprime(pow(2,511), pow(2,512))
@@ -124,7 +124,7 @@ class TestRsaService(unittest.TestCase):
         plain_integer = self.rsaService.de_crypt(keys[0],keys[2],cipher_integer)
         self.assertEqual(random_integer, plain_integer)
 
-    def test_encrypt_decrypt_random_int(self):
+    def test_encrypt_decrypt_random_int_fail(self):
         '''testaa salauksen ja purun epäonnistumisen väärällä avaimella'''
         random_integer = randint(pow(2,511),pow(2,512))
         keys = self.rsaService.create_keys()
