@@ -8,7 +8,7 @@
 Olennaisimmat testit liittyvät alkulukujen luontiin ja mm. Miller-Rabin -tarkistuksen testaukseen sekä d-komponentin tuottamiseen vaadittavaan (inverse) euklideen algoritmiin. Yksikkötesteissä on hyödynnetty Pythonin SYMPY-kirjastoa, josta löytyy mm. funktio isPrime(),
 
 ## Automaattiset yksikkötestit:
-- Alkulukujen generointi 
+Alkulukujen generointi 
   1. Testataan, että luotu alkuluku P on prime (SYMPY isPrime())
   2. Testataan, että alkulukujen luonti tuottaa random-alkulukuja (tarkistetaan kahden generoidun alkuluvun ero)
   3. Testataan, että luotu alkuluku Q on prime (SYMPY isPrime())
