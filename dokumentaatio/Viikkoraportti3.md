@@ -4,7 +4,7 @@
     - Lisätty dokumentaatiota: käyttöohje (31.7.)
     - Lisää testejä, mm. väärä avain ei avaa viestiä, miller rabin komposiittitesti iteroivaksi (31.7.)
     - testikattavuus yksikkötesteissä 95% -> 98%
-    
+    - Testausdokumentti, vähän testien korjailua.
     
 - Mitä opin tällä viikolla / tänään?
    - tutustumista aika- ja tilavaatimuksiin (31.7.)
@@ -17,7 +17,6 @@
 
 - Mitä teen seuraavaksi?
     
-    - testausdokumentin
     - toteutusdokumentin
 
 
