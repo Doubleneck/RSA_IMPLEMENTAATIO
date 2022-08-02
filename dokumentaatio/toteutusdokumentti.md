@@ -7,7 +7,7 @@ Sovellus on 1024bit RSA-avaingeneraattori ja encoder/decoder tekstikäyttöliitt
 
 Pääasiallisesti toteutus perustuu tähän artikkeliin, mistä löytyy salauksen toimintaperiaate ja rakenne [wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem)), sekä mm. Fermat´n pieneen lauseeseen perustuva matemaattinen todistus.
 
-- Miller-Rabin algoritmi [wikipedia](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test))
+- Miller-Rabin algoritmi [wikipedia](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test)
 - Laajennettu Eukleideen algoritmi [wikipedia](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)
 
 
