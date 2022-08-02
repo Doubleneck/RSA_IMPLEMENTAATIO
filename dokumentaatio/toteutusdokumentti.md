@@ -19,13 +19,13 @@ Ensin suoritettava random-alkuluvun luominen ja matalan kynnyksen alkulukutestau
 (Alkulukuja esiintyy tässä kokoluokassa noin parinsadan kokonaisluvun välein, ja etsintä tehdään korkeintaan muutaman kerran noin 200 sarjalla)
 
 Miller-rabinin aikavaatimus on O(k log3 n), missä n on testattava luku (2^511-2^512) ja k iteraatioiden määrä (40)
-Laajennetun Eukleideen algoritmin aikavaatimus on O(log(min(a, b))).[aikavaatimus](https://www.scaler.com/topics/data-structures/extended-euclidean-algorithm)
+Laajennetun Eukleideen algoritmin aikavaatimus on O(log(min(a, b))). [lähde](https://www.scaler.com/topics/data-structures/extended-euclidean-algorithm)
 
 Avainten tuottamisen aikavaatimus on siis O(k log3 n) + O(log(min(a, b))). 
 
 Salaaminen ja purku:
 
-Jos oletetaan, että modulaarilaskenta toimii aikavaatimuksella  O(log(n)), missä n on mikä tahansa kokonaisluku, niin eksponenttifunktioiden laskennan aikavaatimus on salauksen ja purun yhteydessä O((log n)^3))[aikavaatimus](https://www.quora.com/What-is-the-complexity-of-RSA-cryptographic-algorithm)
+Jos oletetaan, että modulaarilaskenta toimii aikavaatimuksella  O(log(n)), missä n on mikä tahansa kokonaisluku, niin eksponenttifunktioiden laskennan aikavaatimus on salauksen ja purun yhteydessä O((log n)^3)). [lähde](https://www.quora.com/What-is-the-complexity-of-RSA-cryptographic-algorithm)
 
 Tilavaatimus:
 
