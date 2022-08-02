@@ -18,7 +18,7 @@ Avaimet:
 Ensin suoritettava random-alkuluvun luominen ja matalan kynnyksen alkulukutestaus tapahtuu vakioajassa O(1).
 (Alkulukuja esiintyy tässä kokoluokassa noin parinsadan kokonaisluvun välein, ja etsintä tehdään korkeintaan muutaman kerran noin 200 sarjalla)
 
-Miller-rabinin aikavaatimus on O(k log3 n), missä n on testattava luku (2^511-2^512) ja k iteraatioiden määrä (40)
+Miller-rabinin aikavaatimus on O(k log3 n), missä n on testattava luku (2^511-2^512) ja k iteraatioiden määrä (40). 
 Laajennetun Eukleideen algoritmin aikavaatimus on O(log(min(a, b))). [lähde](https://www.scaler.com/topics/data-structures/extended-euclidean-algorithm)
 
 Avainten tuottamisen aikavaatimus on siis O(k log3 n) + O(log(min(a, b))). 
