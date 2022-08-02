@@ -14,4 +14,5 @@
 |31.7.|3| Käyttöohje, aika- ja tilavaatimusten tarkastelua|
 |31.7.|3| Lisää testejä, Lisää validointia, uusi testiraportti, manuaaliset miller-rabin testit|
 |1.8.|2| Testausdokumentti, lisätty uusi str-bin -konversiotesti, korjauksia rsa-testiluokassa |
-|yht |59|
+|2.8.|1| Toteutusdokumenttia aluille|
+|yht |60|
