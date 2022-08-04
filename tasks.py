@@ -9,6 +9,10 @@ def test(ctx):
     ctx.run("pytest src")
 
 @task
+def manual_test(ctx):
+    ctx.run("python3 src/iterations.py")
+
+@task
 def coverage(ctx):
     ctx.run("coverage run --branch -m pytest", pty=True)
 
