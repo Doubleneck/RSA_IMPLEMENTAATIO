@@ -15,4 +15,5 @@
 |31.7.|3| Lisää testejä, Lisää validointia, uusi testiraportti, manuaaliset miller-rabin testit|
 |1.8.|2| Testausdokumentti, lisätty uusi str-bin -konversiotesti, korjauksia rsa-testiluokassa |
 |2.8.|1| Toteutusdokumenttia aluille|
-|yht |60|
+|7.8.|8| Integraatiotesti, päivitetty yksikkötestejä nopeammiksi, päivitetty dokumentaatio|
+|yht |68|
