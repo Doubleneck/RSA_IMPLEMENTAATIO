@@ -15,8 +15,6 @@ Pääasiallisesti toteutus perustuu tähän artikkeliin, mistä löytyy salaukse
 
 Avaimet:
 
-Ensin suoritettava random-alkuluvun luominen ja matalan kynnyksen alkulukutestaus tapahtuu vakioajassa O(1).
-(Alkulukuja esiintyy tässä kokoluokassa noin parinsadan kokonaisluvun välein, ja etsintä tehdään korkeintaan muutaman kerran noin 200 sarjalla)
 
 Miller-rabinin aikavaatimus on O(k log3 n), missä n on testattava luku (2^511-2^512) ja k iteraatioiden määrä (40). 
 Laajennetun Eukleideen algoritmin aikavaatimus on O(log(min(a, b))). [lähde](https://www.scaler.com/topics/data-structures/extended-euclidean-algorithm)
@@ -25,7 +23,7 @@ Avainten tuottamisen aikavaatimus on siis O(k log3 n) + O(log(min(a, b))).
 
 Salaaminen ja purku:
 
-Jos oletetaan, että modulaarilaskenta toimii aikavaatimuksella  O(log(n)), missä n on mikä tahansa kokonaisluku, niin eksponenttifunktioiden laskennan aikavaatimus on salauksen ja purun yhteydessä O((log n)^3)). [lähde](https://www.quora.com/What-is-the-complexity-of-RSA-cryptographic-algorithm)
+Modulaarilaskenta toimii aikavaatimuksella  O(log(n)), missä n on mikä tahansa kokonaisluku. Eksponenttifunktioiden laskennan aikavaatimus on salauksen ja purun yhteydessä O((log n)^3)). [lähde](https://www.quora.com/What-is-the-complexity-of-RSA-cryptographic-algorithm)
 
 Tilavaatimus:
 
@@ -35,5 +33,6 @@ Algoritmin tilavaatimus on vakio O(1) suhteessa viestin kokoon, eli salauksen ko
 
 ## Ohjelman rakenne
 
-[luokkakaavio]() PUUTTUU
+Ohjelmassa on kaksi luokkaa, toinen vastaa string-bin konversioista ja toinen RSA-salauksen vaatimista operaatioista.
+Lisäksi päähakemistossa on käyttöliittymän ohittava tiedosto iterations.py, jolla suoritetaan integraatiotestaus. 
 
