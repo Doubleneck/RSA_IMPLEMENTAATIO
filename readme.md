@@ -36,7 +36,7 @@ poetry run invoke start
 ```
 ### Testaus
 
-Testaus suoritetaan virtuaaliympäristössä komennolla:
+Yksikkötestaus suoritetaan virtuaaliympäristössä komennolla:
 ```bash
 poetry run invoke test
 ```
@@ -47,6 +47,12 @@ Testikattavuusraportin voi generoida komennolla:
 poetry run invoke coverage-report 
 ```
 Raportti generoituu _htmlcov_-hakemistoon.
+
+Integraatiotestaus suoritetaan virtuaaliympäristössä komennolla:
+```bash
+poetry run invoke manual-test
+```
+(huom, manuaalitesti kestää useita minuutteja)
 
 ### Pylint
 
