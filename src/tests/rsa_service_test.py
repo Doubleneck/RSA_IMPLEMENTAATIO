@@ -70,7 +70,7 @@ class TestRsaService(unittest.TestCase):
         self.assertEqual(191,self.rsaService.find_low_level_candidate(183))
 
     def test_miller_rabin_is_not_prime_big(self):
-        '''testaa miller-rabinia luvulla joka on komposiitti'''
+        '''testaa miller-rabinia 2x luvulla joka on komposiitti'''
         i = 0
         while i < 2:        
             a = sympy.randprime(pow(2,511), pow(2,512))
