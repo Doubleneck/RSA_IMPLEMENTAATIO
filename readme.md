@@ -24,7 +24,13 @@ Jos komentoa poetry ei löydy, saatat tarvita ensin komennon:
 ```bash
  source $HOME/.poetry/env
 ```
-2. Sovelluksen käynnistys
+
+2. Siirry virtuaaliympäristöön komennolla:
+```bash
+poetry shell
+```
+
+3. Sovelluksen käynnistys
 ```bash
 poetry run invoke start
 ```
