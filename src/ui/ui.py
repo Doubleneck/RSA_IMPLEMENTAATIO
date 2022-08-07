@@ -39,7 +39,7 @@ class UI:
                             break
                     except:
                         print("Avain ei kelpaa!")
-                        continue
+                        break
                     encrypted_msg = RsaService().en_crypt(e_value, n_value, msg_bin)
                     print("**********************************************\n")
                     print("viesti salattuna:\n")
@@ -68,4 +68,4 @@ class UI:
                         break
                     except:
                         print("Avain ei kelpaa!")
-                        continue
+                        break
