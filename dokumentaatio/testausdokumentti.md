@@ -1,7 +1,7 @@
 
-## Viimeisin testiraportti, yksikkötestien kattavuus 98% (1.8.):
+## Viimeisin testiraportti, yksikkötestien kattavuus 98% (7.8.):
 
-- [testikattavuus](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/kuvat/testikattavuusraportti_1_8_2022.png) 
+- [testikattavuus](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/kuvat/testikattavuusraportti) 
 
 # Testaus
 
