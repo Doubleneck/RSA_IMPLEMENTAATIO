@@ -59,26 +59,20 @@ class TestRsaService(unittest.TestCase):
 
 
     def test_create_q_test_totient_is_co_prime_with_e(self):
-        '''testaa 10 x onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
-        i = 0
+        '''testaa onko luotujen alkulukujen p ja q avulla muodostettu totientti e:n coprime'''
+      
         e_value = 65537
-        ret = True
-        while i < 10:
-            prime_p = self.rsaService.create_p()
-            prime_q = self.rsaService.create_q(prime_p)
-            ret = (prime_p-1) * (prime_q-1) % e_value != 0
-            if not ret:
-                break
-            i += 1    
-        self.assertEqual(True, ret)
+        prime_p = self.rsaService.create_p()
+        prime_q = self.rsaService.create_q(prime_p)
+        self.assertEqual(True, (prime_p-1) * (prime_q-1) % e_value != 0)
 
     def test_find_low_level_candidate(self):
         self.assertEqual(191,self.rsaService.find_low_level_candidate(183))
 
     def test_miller_rabin_is_not_prime_big(self):
-        '''testaa miller-rabinia viidellä luvulla joka on komposiitti'''
+        '''testaa miller-rabinia luvulla joka on komposiitti'''
         i = 0
-        while i < 5:        
+        while i < 2:        
             a = sympy.randprime(pow(2,511), pow(2,512))
             b = sympy.randprime(pow(2,511), pow(2,512))
             test_passed = self.rsaService.miller_rabin_check(a*b)
@@ -88,14 +82,9 @@ class TestRsaService(unittest.TestCase):
         self.assertNotEqual(True, test_passed)
 
     def test_miller_rabin_is_prime_big(self):
-        '''testaa miller-rabinia viidellä 512 bit random -alkuluvulla'''
-        i = 0
-        while i < 5:
-            a = sympy.randprime(pow(2,511), pow(2,512))
-            test_passed = self.rsaService.miller_rabin_check(a)
-            if not test_passed:
-                break
-            i += 1
+        '''testaa miller-rabinia 512 bit random -alkuluvulla'''
+        a = sympy.randprime(pow(2,511), pow(2,512))
+        test_passed = self.rsaService.miller_rabin_check(a)
         self.assertEqual(True, test_passed)
 
     def test_extended_eucleidian(self):
@@ -115,7 +104,7 @@ class TestRsaService(unittest.TestCase):
         e_value = 65537
         d_value = self.rsaService.extended_eucleidian(totient,e_value)   
         self.assertEqual(1, e_value * d_value % totient)     
-
+    
     def test_encrypt_decrypt_random_int(self):
         '''testaa salauksen ja purun 512-bittisellä luvulla'''
         random_integer = randint(pow(2,511),pow(2,512))

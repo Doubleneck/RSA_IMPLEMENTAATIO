@@ -1,6 +1,7 @@
 '''integraatiotestimoduli'''
 import random
 import string
+import sympy
 from services.conversion_service import ConversionService
 from services.rsa_service import RsaService
 
@@ -9,6 +10,7 @@ def get_random_string(length):
     characters = string.ascii_letters + string.digits + string.punctuation
     result_str = ''.join(random.choice(characters) for i in range(length))
     return result_str
+
 
 def main():
     '''testaa n (=iterations) kertaa salausoperaation edestakaisin
