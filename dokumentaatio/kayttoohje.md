@@ -26,6 +26,12 @@ Testaus suoritetaan virtuaaliympäristössä komennolla:
 ```bash
 poetry run invoke test
 ```
+Manuaalinen integraatiotestaus suoritetaan virtuaaliympäristössä komennolla:
+```bash
+poetry run invoke manual-test
+```
+(huom, manuaalitesti kestää useita minuutteja)
+
 ### Testikattavuus
 
 Testikattavuusraportin voi generoida komennolla:
