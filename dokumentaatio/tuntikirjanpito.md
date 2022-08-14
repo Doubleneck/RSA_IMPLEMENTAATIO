@@ -1,4 +1,5 @@
-#Tuntikirjanpito
+#Tuntikirjanpito 
+(ei sisällä vertaisarviointeihin käytettyä aikaa)
 
 |pvm | h | mitä tein |
 |:--:|:--|:----|
