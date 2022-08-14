@@ -18,8 +18,12 @@ Avaimet:
 
 Miller-rabinin aikavaatimus on O(k log3 n), missä n on testattava luku (2^511-2^512) ja k iteraatioiden määrä (40). 
 Laajennetun Eukleideen algoritmin aikavaatimus on O(log(min(a, b))). [lähde](https://www.scaler.com/topics/data-structures/extended-euclidean-algorithm)
+Eukleideen algoritmi suoritetaan vain kerran, ja se saa argumenteikseen salauskomponentin e=65537 ja totientin N, joka on aina suurempi kuin e.
+Euklideen aikavaatimus on siis O(log(65537)) eli vakio O(1).
 
-Avainten tuottamisen aikavaatimus on siis O(k log3 n) + O(log(min(a, b))). 
+Avainten tuottamisen aikavaatimukseksi saadaan O(k log3 n) + O(1) eli:
+
+O(k log3 n). 
 
 Salaaminen ja purku:
 
@@ -28,7 +32,6 @@ Modulaarilaskenta toimii aikavaatimuksella  O(log(n)), missä n on mikä tahansa
 Tilavaatimus:
 
 Algoritmin tilavaatimus on vakio O(1) suhteessa viestin kokoon, eli salauksen kokoluokka N (tässä 1024)
-
 
 
 ## Ohjelman rakenne
