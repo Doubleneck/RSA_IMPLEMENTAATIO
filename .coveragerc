@@ -3,4 +3,4 @@ source = src
 omit = src/**/__init__.py,src/tests/**,src/ui/**,src/index.py
 
 [report]
-omit = src/iterations.py
+omit = src/iterations.py, src/millerrabinxtimes.py
