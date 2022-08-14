@@ -16,4 +16,5 @@
 |1.8.|2| Testausdokumentti, lisätty uusi str-bin -konversiotesti, korjauksia rsa-testiluokassa |
 |2.8.|1| Toteutusdokumenttia aluille|
 |7.8.|8| Integraatiotesti, päivitetty yksikkötestejä nopeammiksi, päivitetty dokumentaatio|
-|yht |68|
+|14.8.|2| Hidas testi Miller-Rabinille, päivitetty dokumentaatio |
+|yht |70|
