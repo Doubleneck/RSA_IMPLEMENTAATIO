@@ -32,6 +32,11 @@ poetry run invoke manual-test
 ```
 (huom, manuaalitesti kestää useita minuutteja)
 
+Manuaalinen Miller-Rabin -testaus suoritetaan virtuaaliympäristössä komennolla:
+```bash
+poetry run invoke mr-test
+```
+
 ### Testikattavuus
 
 Testikattavuusraportin voi generoida komennolla:
