@@ -1,5 +1,5 @@
 #Tuntikirjanpito 
-(ei sisällä vertaisarviointeihin käytettyä aikaa)
+(Vertaisarvio #1 noin 13h, ei varsinaisessa kirjanpidossa)
 
 |pvm | h | mitä tein |
 |:--:|:--|:----|
@@ -19,3 +19,5 @@
 |7.8.|8| Integraatiotesti, päivitetty yksikkötestejä nopeammiksi, päivitetty dokumentaatio|
 |14.8.|2| Hidas testi Miller-Rabinille, päivitetty dokumentaatio |
 |yht |70|
+|vertaisarviot |13|
+|total |83|
