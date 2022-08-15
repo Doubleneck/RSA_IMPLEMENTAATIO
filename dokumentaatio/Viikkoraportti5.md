@@ -7,10 +7,12 @@
 - Mitä opin tällä viikolla / tänään?
    - aikavaatimusten analysointia.
    - Vertaisarvioinnissa tuli paljon erilaisia uusia asioita, tulee tutustuttua itselle vieraisiin algoritmeihin ja jotain käyttökelpoisia koodaamistapojakin tuli vastaan. Melko työlästä mutta ihan kiinnostavaa. Tässä vierähti 4-5 tuntia. Jatkan huomenna. (14.8.)
+   - Uskoisin löytäneeni muutamia parannusehdotuksia vertaisarvioinneissa.  Tässä kuluikin melkein koko päivä (15.8.)
+   - Toisen koodin lukeminen - etenkin kun se on hyvin dokumentoitu ja loogisesti nimetty etc. on kyllä erinomaisen opettavaista.
     
 - Mikä jäi epäselväksi tai tuottanut vaikeuksia? 
-   - Oli vaikeuksia hahmottaa aikavaatimuksia, mutta ne kyllä lopulta selvis.
-   - Vertaisarvioitavan työn jotkut perusasiat eivät meinaa aueta, mutta toisaalta tuntuu että aika hyvin sain kokonaisuudesta kiinni.
+   - Oli vaikeuksia hahmottaa oman työni aikavaatimuksia, mutta kyllä ne lopulta selvis.
 
 - Mitä teen seuraavaksi?
-    - Ensimmäisen vertaisarvion 
+    - Toisen vertaisarvion
+    - Lisään ehkä hitaaseen miller-rabin testiini vielä testauksen varmoilla alkuluvuilla. 
