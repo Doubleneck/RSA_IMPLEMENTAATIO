@@ -82,14 +82,13 @@ class RsaService:
         '''luo alkuluvun q, niin että phi-totientti (p-1 * q-1) on e-komponentin co-prime'''
         found = False
         while not found:
-            candidate = self.n_odd_random(512)
-            low_level_candidate = self.find_low_level_candidate(candidate)
-            found = self.miller_rabin_check(low_level_candidate)
-            if low_level_candidate == p_value:
+            q_candidate = self.create_p()
+            found = True
+            if q_candidate == p_value:
                 found = False
-            if (low_level_candidate - 1 * p_value -1) % 65537 == 0:
+            if (q_candidate - 1 * p_value -1) % 65537 == 0:
                 found = False
-        return low_level_candidate
+        return q_candidate
 
     def create_keys(self):
         '''luo avainparin, julkisen ja yksityisen avaimen'''
