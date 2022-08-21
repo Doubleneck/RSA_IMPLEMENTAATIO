@@ -1,5 +1,4 @@
 #Tuntikirjanpito 
-(Vertaisarvio #1 noin 13h, ei varsinaisessa kirjanpidossa)
 
 |pvm | h | mitä tein |
 |:--:|:--|:----|
@@ -20,5 +19,6 @@
 |14.8.|2| Hidas testi Miller-Rabinille, päivitetty dokumentaatio |
 |21.8.|1| Hienosäätöä ensimmäisiin vertaisarvioihin perustuen, päivitetty dokumentaatio |
 |yht |71|
-|vertaisarviot |13|
-|total |84|
+|vertaisarvio1 |13|
+|vertaisarvio2 |4|
+|total |88|
