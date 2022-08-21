@@ -48,13 +48,13 @@ class RsaService:
         a_for_test = random.randrange(2, n_val-1)
 
         def test_unit(a_for_test):
-            '''yksittäinen miller-rabin testi'''
+            '''yksittäinen miller-rabin testi, testaa onko luku komposiitti'''
             if pow(a_for_test, m_val, n_val) == 1 or pow(a_for_test, m_val, n_val) == n_val-1:
-                return False # a_for_test luultavasti ON alkuluku.
+                return False # a_for_test luultavasti ei ole komposiitti.
             for i in range(1,exp):
                 if pow(a_for_test, 2**i * m_val, n_val) == n_val-1:
-                    return False
-            return True #  a_for_test varmasti EI ole alkuluku.
+                    return False # a_for_test luultavasti ei ole komposiitti.
+            return True #  a_for_test varmasti on komposiitti.
 
         #40 testiä eri a:n arvoilla:
         for _ in range(40):
