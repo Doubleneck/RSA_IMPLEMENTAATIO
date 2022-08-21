@@ -8,7 +8,7 @@
 |18.7.|3| luotu ohjelmarunko, string-bin konversiot|
 |19.7.|8| rsa funktioita, ensimmäisiä testejä, poetry invoke käyttöön, pylint siivousta, keygen ja ui rakentelua|
 |23.7.|2| laajennetun eukleideen algoritmin rakennus|
-|24.7.|7| testit miller-rabinille, eukleideen algoritmi, ohjelma toimiimaan, lintteriä ja siivousta.|
+|24.7.|7| testit miller-rabinille, eukleideen algoritmi, ohjelma toimimaan, lintteriä ja siivousta.|
 |25.7.|4| testit eukleideen algoritmille, invoke ajan tasalle, testiraportointi käyttöön|
 |26.7.|4| testejä, alkulukugeneroinnin virheen korjaus,uusi testiraportti|
 |26.7.|1| ui validointia|
