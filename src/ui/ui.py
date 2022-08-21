@@ -21,7 +21,7 @@ class UI:
                 pri_key = str(rsa_keys[0])+"-"+str(rsa_keys[2])
                 print("PUBLIC KEY (e,N): \n")
                 print(pub_key,"\n")
-                print("******************************************************************************")
+                print("*" * 40)
                 print("PRIVATE KEY (d,N): \n")
                 print(pri_key,"\n")
 
@@ -41,7 +41,7 @@ class UI:
                         print("Avain ei kelpaa!")
                         break
                     encrypted_msg = RsaService().en_crypt(e_value, n_value, msg_bin)
-                    print("**********************************************\n")
+                    print("*"* 40 + "\n")
                     print("viesti salattuna:\n")
                     print(encrypted_msg)
                     print("\n")
@@ -60,11 +60,11 @@ class UI:
                             break
                         decrypted_msg = RsaService().de_crypt(d_value, n_value, int(crypted_message))
                         msg_str = ConversionService().encode_bin_to_string(decrypted_msg)
-                        print("**********************************************\n")
+                        print("*"* 40 + "\n")
                         print("viesti purettuna:\n")
                         print(msg_str)
                         print("\n")
-                        print("**********************************************\n")
+                        print("*"* 40 + "\n")
                         break
                     except:
                         print("Avain ei kelpaa!")
