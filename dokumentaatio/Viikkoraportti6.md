@@ -6,6 +6,7 @@
     - siistitty ui:n koodia
     - päivitetty .pylintrc:n konfiguraatio
     - Päivitetty dokumentaatio 21.8.
+    - Tehty toinen vertaisarvio 21.8.
 
 - Mitä opin tällä viikolla / tänään?
    - Hyviä sekalaisia pikkuvinkkejä vertaisarvioiden perusteella. 
@@ -13,5 +14,6 @@
 - Mikä jäi epäselväksi tai tuottanut vaikeuksia? 
    
 - Mitä teen seuraavaksi?
-    - Toisen vertaisarvion
+    - Odottelen toista vertaisarviota ja sen mahdollisesti tuomia parannusehdotuksia
+    - Valmistelen sen jälkeen releasea ja loppupalautusta
    
