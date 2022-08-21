@@ -18,6 +18,7 @@
 |2.8.|1| Toteutusdokumenttia aluille|
 |7.8.|8| Integraatiotesti, päivitetty yksikkötestejä nopeammiksi, päivitetty dokumentaatio|
 |14.8.|2| Hidas testi Miller-Rabinille, päivitetty dokumentaatio |
-|yht |70|
+|21.8.|1| Hienosäätöä ensimmäisiin vertaisarvioihin perustuen, päivitetty dokumentaatio |
+|yht |71|
 |vertaisarviot |13|
-|total |83|
+|total |84|
