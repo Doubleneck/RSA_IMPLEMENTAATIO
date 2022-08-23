@@ -16,3 +16,5 @@
 - Mitä teen seuraavaksi?
     - Toisen vertaisarvion
     - Lisään ehkä hitaaseen miller-rabin testiini vielä testauksen varmoilla alkuluvuilla. 
+
+- Käytetty aika: tällä viikolla 15h / Yhteensä 83h 
