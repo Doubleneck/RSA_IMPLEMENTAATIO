@@ -15,5 +15,7 @@
    
 - Mitä teen seuraavaksi?
     - Odottelen toista vertaisarviota ja sen mahdollisesti tuomia parannusehdotuksia
+    - Osallistun esittelytilaisuuteen
     - Valmistelen sen jälkeen releasea ja loppupalautusta
    
+- Käytetty aika: tällä viikolla 5h / Yhteensä 88h    
