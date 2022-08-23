@@ -33,4 +33,4 @@
     - testausdokumentin
     - varmaankin käyttöohjeen
 
- 
+ - Käytetty aika: tällä viikolla 16h / Yhteensä 51h 
