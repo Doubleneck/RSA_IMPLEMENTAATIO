@@ -15,12 +15,12 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8` Mac OS ja Ubuntu Linux k
 
 
 ### Viikkoraportit
-[Viikko 1](./documentation/Viikkoraportti1.md)<br>
-[Viikko 2](./documentation/Viikkoraportti2.md)<br>
-[Viikko 3](./documentation/Viikkoraportti3.md)<br>
-[Viikko 4](./documentation/Viikkoraportti4.md)<br>
-[Viikko 5](./documentation/Viikkoraportti5.md)<br>
-[Viikko 6](./documentation/Viikkoraportti6.md)<br>
+- [Viikko 1](./dokumentaatio/Viikkoraportti1.md)<br>
+- [Viikko 2](./dokumentaatio/Viikkoraportti2.md)<br>
+- [Viikko 3](./dokumentaatio/Viikkoraportti3.md)<br>
+- [Viikko 4](./dokumentaatio/Viikkoraportti4.md)<br>
+- [Viikko 5](./dokumentaatio/Viikkoraportti5.md)<br>
+- [Viikko 6](./dokumentaatio/Viikkoraportti6.md)<br>
 
 ## Asennus
 
