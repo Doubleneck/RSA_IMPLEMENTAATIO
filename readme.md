@@ -10,9 +10,17 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8` Mac OS ja Ubuntu Linux k
 
 - [käyttöohje](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/kayttoohje.md)  
 - [vaatimusmäärittely](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/vaatimusmaarittely.md)  
-- [tuntikirjanpito](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [testausdokumentti](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/testausdokumentti.md)  
 - [toteutusdokumentti](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/toteutusdokumentti.md)  
+
+
+### Viikkoraportit
+[Viikko 1](./documentation/Viikkoraportti1.md)<br>
+[Viikko 2](./documentation/Viikkoraportti2.md)<br>
+[Viikko 3](./documentation/Viikkoraportti3.md)<br>
+[Viikko 4](./documentation/Viikkoraportti4.md)<br>
+[Viikko 5](./documentation/Viikkoraportti5.md)<br>
+[Viikko 6](./documentation/Viikkoraportti6.md)<br>
 
 ## Asennus
 
