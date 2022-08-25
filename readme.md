@@ -1,6 +1,6 @@
 # Tietorakenteiden ja algoritmien harjoitustyö:RSA-salaus
 
-Sovellus on 1024bit RSA-avaingeneraattori ja encoder/decoder tekstikäyttöliittymällä. 
+Sovellus on 1024bit RSA-avaingeneraattori ja encoder/decoder tekstikäyttöliittymällä. Harjoitustyö on tehty Helsingin Yliopiston TKT:n kandiohjelman kurssilla "Tietorakenteiden ja algoritmien harjoitustyö" (loppukesä 2022).
  
 ##  Python-versio:
 
