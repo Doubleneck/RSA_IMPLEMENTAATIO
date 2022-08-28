@@ -32,7 +32,7 @@ String-binääri -konversioitten testaaminen on hyvin suoraviivaista. Testataan,
 Alkulukujen generoinnin testit 5 ja 6 (Miller Rabin alkuluvulla ja komposiitilla) toistettiin kumpikin 10.000 kertaa.
 
 ## Manuaalinen Miller-Rabin -testi:
-Testataan 100x miller-rabin 1024-bittisellä komposiitilla.
+Testataan 100x miller-rabin 1024-bittisellä komposiitilla ja 100x miller-rabin 512-bittisellä alkuluvulla.
 
 ## Manuaalinen integraatiotesti:
 Testataan 1000x koko salausproseduuri läpi, eli

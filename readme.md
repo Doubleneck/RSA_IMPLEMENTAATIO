@@ -21,6 +21,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8` Mac OS ja Ubuntu Linux k
 - [Viikko 4](./dokumentaatio/Viikkoraportti4.md)<br>
 - [Viikko 5](./dokumentaatio/Viikkoraportti5.md)<br>
 - [Viikko 6](./dokumentaatio/Viikkoraportti6.md)<br>
+- [Viikko 7](./dokumentaatio/Viikkoraportti7.md)<br>
 
 ## Asennus
 
