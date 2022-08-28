@@ -37,7 +37,15 @@ class RsaService:
         return is_prime
 
     def miller_rabin_check(self,n_val):
-        '''testaa onko annettu luku suurella todennäköisyydellä alkuluku'''
+        '''testaa onko annettu luku suurella todennäköisyydellä alkuluku
+
+        Args:
+            n_val (integer): testattava alkuluku.
+
+        Returns:
+            True, jos argumenttina annettu luku (todennäköisesti) on alkuluku,
+            muussa tapauksessa False.
+        '''
         exp = 0
         a_val = n_val-1
         while a_val % 2 == 0:
@@ -79,7 +87,15 @@ class RsaService:
         return low_level_candidate
 
     def create_q(self,p_value):
-        '''luo alkuluvun q, niin että phi-totientti (p-1 * q-1) on e-komponentin co-prime'''
+        '''luo alkuluvun q, niin että phi-totientti (p-1 * q-1) on
+            e-komponentin co-prime
+
+        Args:
+            p_value(integer): aiemmin generoitu random-alkuluku P.
+        Returns:
+            q_candidate(integer): alkuluku Q,
+            joka toteuttaa ehdon (p-1 * q-1) on e-komponentin co-prime.
+        '''
         found = False
         while not found:
             q_candidate = self.create_p()
@@ -101,20 +117,45 @@ class RsaService:
         return (d_value,e_value,big_n)
 
     def en_crypt(self,e_val,n_val,msg):
-        '''suorittaa salauksen'''
+        '''suorittaa salauksen
+
+        Args:
+            e_val(integer):salauseksponentti e = 65537.
+            n_val(integer):salauksen modulus N.
+            msg(integer):salattava viesti muutettuna kokonaisluvuksi.
+
+        Returns:
+            ret(integer):salattu viesti kryptattuna
+        '''
         ret = pow(msg,e_val,n_val)
         return ret
 
     def de_crypt(self,d_val,n_val,msg):
-        '''suorittaa purkamisen'''
+        '''suorittaa purkamisen
+
+        Args:
+            d_val(integer):salauseksponentti d.
+            n_val(integer):salauksen modulus N.
+            msg(integer):salattu viesti muutettuna kokonaisluvuksi.
+
+        Returns:
+            ret(integer):purettu viesti kokonaislukuna.
+        '''
         ret = pow(msg,d_val,n_val)
         return ret
 
     def extended_eucleidian(self,a_val,b_val):
         '''tuottaa d-komponentin yksityiseen avaimeen
-           output muuttujat:
-           "Bézout coefficients:": (old_s, bezout_t)
-           "GCD": old_r
+
+        Args:
+            a_val(integer):ensimmäinen testattava kokonaisluku, tässä saa
+            arvokseen salauseksponetin e.
+            b_val(integer):toinen testattava kokonaisluku, tässä saa arvokseen
+            phi-totientin (q-1)*(p-1)
+
+        Returns:
+           old_s(integer): Bézout coefficient, joka on tässä myös d-komponetti.
+
         '''
         if a_val > b_val:
             a_val, b_val = b_val, a_val
@@ -126,10 +167,6 @@ class RsaService:
             quotient = old_r // r_val
             old_r, r_val =  r_val, old_r - quotient * r_val
             old_s, s_val =  s_val, old_s - quotient * s_val
-        #if b_val != 0:
-        #    bezout_t = (old_r - old_s * a_val)	 // b_val
-        #else:
-        #    bezout_t = 0
         if old_s < 0:
             old_s += b_val
         return old_s
