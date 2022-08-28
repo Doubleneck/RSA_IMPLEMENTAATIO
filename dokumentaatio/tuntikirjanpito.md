@@ -19,7 +19,9 @@
 |14.8.|2| Hidas testi Miller-Rabinille, päivitetty dokumentaatio |
 |21.8.|1| Hienosäätöä ensimmäisiin vertaisarvioihin perustuen, päivitetty dokumentaatio |
 |25.8.|1| Päivitetty dokumentaatiota|
-|yht |72|
+|28.8.|2| Päivitetty hidas testi Miller-Rabinille, päivitetty docstringeihin args/returns, päivitetty dokumentaatiota, final release|
+|29.8.|2| Loppudemo/Zoom|
+|yht |76|
 |vertaisarvio1 |13|
 |vertaisarvio2 |4|
-|total |89|
+|total |94|
