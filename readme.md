@@ -1,6 +1,6 @@
 # Tietorakenteiden ja algoritmien harjoitustyö:RSA-salaus
 
-Sovellus on 1024bit RSA-avaingeneraattori ja encoder/decoder tekstikäyttöliittymällä. 
+Sovellus on 1024bit RSA-avaingeneraattori ja encoder/decoder tekstikäyttöliittymällä. Harjoitustyö on tehty Helsingin Yliopiston TKT:n kandiohjelman kurssilla "Tietorakenteiden ja algoritmien harjoitustyö" (loppukesä 2022).
  
 ##  Python-versio:
 
@@ -10,9 +10,17 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8` Mac OS ja Ubuntu Linux k
 
 - [käyttöohje](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/kayttoohje.md)  
 - [vaatimusmäärittely](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/vaatimusmaarittely.md)  
-- [tuntikirjanpito](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [testausdokumentti](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/testausdokumentti.md)  
 - [toteutusdokumentti](https://github.com/Doubleneck/RSA_IMPLEMENTAATIO/blob/master/dokumentaatio/toteutusdokumentti.md)  
+
+
+### Viikkoraportit
+- [Viikko 1](./dokumentaatio/Viikkoraportti1.md)<br>
+- [Viikko 2](./dokumentaatio/Viikkoraportti2.md)<br>
+- [Viikko 3](./dokumentaatio/Viikkoraportti3.md)<br>
+- [Viikko 4](./dokumentaatio/Viikkoraportti4.md)<br>
+- [Viikko 5](./dokumentaatio/Viikkoraportti5.md)<br>
+- [Viikko 6](./dokumentaatio/Viikkoraportti6.md)<br>
 
 ## Asennus
 

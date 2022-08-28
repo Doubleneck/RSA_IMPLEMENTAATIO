@@ -17,3 +17,5 @@
 - Mitä teen seuraavaksi?
     
     - Odottelen kommentteja ja vertaisarvioitavia 
+
+- Käytetty aika: tällä viikolla 8h / Yhteensä 68h 

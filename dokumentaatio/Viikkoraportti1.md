@@ -29,3 +29,5 @@
     - Pseudokoodin avulla extended eucleidianin, sen jälkeen tän pitäisi olla jo avainten generointi ja salaus/purku -kunnossa.
     - Löysin nopeuttavan pow:n joka tekee optimoimmin laskemalla ilmeisesti jotenkin jakojäännösten avulla huomattavasti nopeammin, mutta en ainakaan vielä
       käsitä miten se toimii. 
+
+- Käytetty aika: tällä viikolla 35h / Yhteensä 35h (sisältää ennakkotutustumiset 18h ennen kurssin alkua), dokumentaatiossa myös tuntikirjanpito.

@@ -23,4 +23,6 @@
     - jatkan toteutusdokumentin parissa
 
 
+ - Käytetty aika: tällä viikolla 9h / Yhteensä 60h 
+
  
